@@ -1,0 +1,14 @@
+INC=/I..\Tools\c++
+CXXFLAGS=/O2
+
+all: fastXML_train fastXML_predict
+
+fastXML_train:
+	cl /EHsc /Fe:fastXML_train.exe $(CXXFLAGS) $(INC) fastXML_train.cpp fastXML.cpp ..\Tools\c++\mat.cpp
+
+fastXML_predict:
+	cl /EHsc /Fe:fastXML_predict.exe $(CXXFLAGS) $(INC) fastXML_predict.cpp fastXML.cpp ..\Tools\c++\mat.cpp
+
+clean:
+	del /f fastXML_train.exe fastXML_train.obj fastXML_predict.exe fastXML_predict.obj fastXML.obj mat.obj
+
