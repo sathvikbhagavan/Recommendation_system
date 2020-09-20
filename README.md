@@ -2,7 +2,7 @@
 
 Assignment-2 of CS771A - Introduction to Machine Learning - Indian Institute of Technology, Kanpur - 2019-20 Sem-I
 
-The project is about making a recommedation system for an ecommerce site and testing it on classic metrics - prec and mprec
+The project is about making a recommedation system for an ecommerce site and testing it on classic metrics - Precision at k and Macro Precision at k
 
 Extreme Classification algorithm called FastXML was used
 
