@@ -11,7 +11,7 @@ L = 3400
 
 # Get recommendations from predict.py and time the thing
 tic = time.perf_counter()
-y_pred = predict.get_recommendations(X, 5)
+y_pred = predict.getReco(X, 5)
 toc = time.perf_counter()
 
 print( "Total time taken is %.6f seconds " % (toc - tic) )
