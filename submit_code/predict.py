@@ -23,7 +23,7 @@ def dump_svmlight_file(X, y, file, zero_based=True):
     _dump_svmlight_file(file, X.data, X.indices, X.indptr, y, int(zero_based))
 
 
-def get_recommendations(X, k):
+def getReco(X, k):
     N, d = X.get_shape()
     dummy = sps.csr_matrix((N, 1))
     y = np.ones((N))
